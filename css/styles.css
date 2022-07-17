@@ -607,6 +607,7 @@ img {
 .footer-cta-text {
   text-transform: uppercase;
   color: var(--primary-color);
+  font-weight: 500;
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
@@ -652,6 +653,7 @@ img {
   border-radius: 4px;
   padding: 0 16px;
   margin-right: 12px;
+  color: var(--primary-color);
 }
 
 .footer-input::placeholder {
@@ -750,13 +752,20 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  margin: 0 0 12px 0;
 
-  color: #212121;
+  color: var(--title-text-color);
 }
+
 .form-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
@@ -773,7 +782,7 @@ img {
   outline: none;
   width: 100%;
   padding-left: 42px;
-  transition-property: border, fill;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -798,11 +807,16 @@ img {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #comment {
+  margin: 0;
   padding: 12px 16px;
   min-height: 120px;
+  height: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -836,7 +850,8 @@ img {
 
 .check-label {
   margin-right: 3px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -847,15 +862,13 @@ img {
 
 .check-icon {
   display: inline-block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  border: 2px solid #212121;
-  transition-property: background-image;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid var(--title-text-color);
 }
 
 .checkbox:checked + .check-icon {
