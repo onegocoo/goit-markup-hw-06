@@ -602,12 +602,12 @@ img {
 }
 .social-wrap .list {
   display: flex;
-  margin-top: 20px;
 }
 .footer-cta-text {
   text-transform: uppercase;
   color: var(--primary-color);
   font-weight: 500;
+  margin: 0 0 20px 0;
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
