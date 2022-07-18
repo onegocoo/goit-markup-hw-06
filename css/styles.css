@@ -322,6 +322,7 @@ img {
 .work-overlay-text {
   color: var(--primary-color);
   text-transform: uppercase;
+  font-weight: 700;
   margin: auto;
 }
 
@@ -654,8 +655,15 @@ img {
   padding: 0 16px;
   margin-right: 12px;
   color: var(--primary-color);
+  transition-property: border, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-input:focus {
+  border: 1px solid var(--primary-accent-color);
+  outline: var(--primary-accent-color);
+}
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -684,7 +692,7 @@ img {
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
